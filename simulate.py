@@ -167,9 +167,10 @@ stochastic_proportion = 0
 seed_path = "/data/yosef2/users/ivalexander13/simulation_data/seeds_021622.txt"
 
 # External Loops
-mutation_proportions = config.get(
-    'mutation_proportions', 
-    [0.1, 0.5, 1, 2, 5])
+mutation_proportions = [0.05, 0.01, 0.001, 0.0001]
+# config.get(
+#     'mutation_proportions', 
+#     [0.1, 0.5, 1, 2, 5])
 numcassettes = config.get(
     'numcassettes', 
     [10, 20, 40, 100])
@@ -177,15 +178,15 @@ numstateses = config.get(
     'numstates', 
     [1, 10, 50, 100])
 
-pbar1 = tqdm(mutation_proportions)
+pbar1 = tqdm(mutation_proportions, leave=True)
 for mutation_proportion in pbar1:
     pbar1.set_description(f"Mutation Rate: {mutation_proportion}")
 
-    pbar2 = tqdm(numcassettes)
+    pbar2 = tqdm(numcassettes, leave=False)
     for numchars in pbar2:
         pbar2.set_description(f"Num Chars: {numchars}")
 
-        pbar3 = tqdm(numstateses)
+        pbar3 = tqdm(numstateses, leave=False)
         for numstates in pbar3:
             pbar3.set_description(f"Num States: {numstates}")
 
