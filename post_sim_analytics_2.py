@@ -21,7 +21,7 @@ with open("config.json") as f:
 
 # IO Setup
 out_folder = "./post_sim_analytics/"
-in_tree_raw = config["dir_structure"]
+in_tree_raw = config["tree_dir"]
 
 # Helper Functions
 def get_dists(tree, dists_file):
@@ -36,7 +36,7 @@ def get_dists(tree, dists_file):
             pass
 
     dists = pd.DataFrame(columns=tree.leaves, index=tree.leaves)
-    for leaf in tree.leaves[:10]:
+    for leaf in tree.leaves:
         dists[leaf] = tree.get_distances(
             leaf, leaves_only=True
         ).values()  # assume sorted
@@ -72,10 +72,10 @@ def melt_triu(dataf):
 
 
 # mathy math
-t, mutrate_idx = divmod(t, len(config["mutation_proportions"]))
-t, numcassetes_idx = divmod(t, len(config["numcassettes"]))
+t, numtree = divmod(t, 12)
 t, numstates_idx = divmod(t, len(config["numstates"]))
-t, numtree = divmod(t, 50)
+t, numcassetes_idx = divmod(t, len(config["numcassettes"]))
+t, mutrate_idx = divmod(t, len(config["mutation_proportions"]))
 
 # Main Loop
 in_tree_path = in_tree_raw.format(
@@ -89,6 +89,7 @@ tree_file = in_tree_path + "tree" + str(numtree) + ".pkl"
 dists_file = in_tree_path + "dists" + str(numtree) + ".pkl"
 
 if not os.path.isfile(tree_file):
+    print(f'Tree not found: {tree_file}')
     exit()
 
 tree = pic.load(open(tree_file, "rb"))
@@ -98,7 +99,6 @@ tree.character_matrix = tree.character_matrix.replace(-2, -1)
 
 # get dists
 dists_melt = get_dists(tree, dists_file)
-print(dists_melt)
 
 # get dissims
 dissim_melt = get_dissim_whd(tree, in_tree_path, numtree)

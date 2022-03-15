@@ -1,0 +1,2 @@
+usage: post_sim_analytics_2.py [-h] [-t T]
+post_sim_analytics_2.py: error: argument -t: expected one argument

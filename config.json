@@ -1,9 +1,12 @@
 {
-    "mutation_proportions": [0.05, 0.01, 0.001, 0.0001],
+    "mutation_proportions": [0.01, 0.1, 0.5, 0.6, 0.7],
     "numcassettes": [10, 20, 40, 100],
     "numstates": [1, 10, 50, 100],
-    "folders": ["exponential_plus_c"],
-    "numcells": [2000],
+    "topologies": ["exponential_plus_c"],
+    "time": 1,
+    "num_trees": 50,
     "fitness_regimes": ["no_fit"],
-    "dir_structure": "/home/eecs/ivalexander13/datadir/simulation_data/trees/mutrate{mutation_proportions}/char{numcassettes}/states{numstates}/exponential_plus_c/cells2000/no_fit/"
+    "top_dir": "/home/eecs/ivalexander13/datadir/simulation_data/topologies/{topology}/time{time}/{fitness_regime}/",
+    "tree_dir": "/home/eecs/ivalexander13/datadir/simulation_data/trees3/mutrate{mutation_proportions}/char{numcassettes}/states{numstates}/exponential_plus_c/time1/no_fit/",
+    "seed_dir": "/home/eecs/ivalexander13/datadir/simulation_data/seeds/"
 }
