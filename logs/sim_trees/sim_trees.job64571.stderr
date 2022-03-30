@@ -1,0 +1,509 @@
+  0%|          | 0/80 [00:00<?, ?it/s]Doing [ mut0.01 > chars10 > states1 ]:   1%|▏         | 1/80 [00:00<00:00, 29959.31it/s]
+  0%|          | 0/50 [00:00<?, ?it/s][A
+  2%|▏         | 1/50 [00:02<01:40,  2.05s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   2%|▏         | 1/50 [00:02<01:40,  2.05s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   4%|▍         | 2/50 [00:04<01:41,  2.11s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   4%|▍         | 2/50 [00:04<01:41,  2.11s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   6%|▌         | 3/50 [00:04<01:00,  1.30s/it][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   6%|▌         | 3/50 [00:04<01:00,  1.30s/it][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   8%|▊         | 4/50 [00:05<00:53,  1.16s/it][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:   8%|▊         | 4/50 [00:05<00:53,  1.16s/it][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:  10%|█         | 5/50 [00:06<00:44,  1.01it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  10%|█         | 5/50 [00:06<00:44,  1.01it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  12%|█▏        | 6/50 [00:06<00:33,  1.31it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  12%|█▏        | 6/50 [00:06<00:33,  1.31it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  14%|█▍        | 7/50 [00:06<00:27,  1.56it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  14%|█▍        | 7/50 [00:06<00:27,  1.56it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  16%|█▌        | 8/50 [00:07<00:27,  1.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  16%|█▌        | 8/50 [00:07<00:27,  1.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  18%|█▊        | 9/50 [00:10<01:00,  1.47s/it][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  18%|█▊        | 9/50 [00:10<01:00,  1.47s/it][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  20%|██        | 10/50 [00:11<00:52,  1.32s/it][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  20%|██        | 10/50 [00:11<00:52,  1.32s/it][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  22%|██▏       | 11/50 [00:13<00:55,  1.42s/it][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  22%|██▏       | 11/50 [00:13<00:55,  1.42s/it][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  24%|██▍       | 12/50 [00:14<00:46,  1.22s/it][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  24%|██▍       | 12/50 [00:14<00:46,  1.22s/it][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  26%|██▌       | 13/50 [00:15<00:44,  1.19s/it][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  26%|██▌       | 13/50 [00:15<00:44,  1.19s/it][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  28%|██▊       | 14/50 [00:15<00:33,  1.09it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  28%|██▊       | 14/50 [00:15<00:33,  1.09it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  30%|███       | 15/50 [00:16<00:26,  1.31it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  30%|███       | 15/50 [00:16<00:26,  1.31it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  32%|███▏      | 16/50 [00:16<00:21,  1.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  32%|███▏      | 16/50 [00:16<00:21,  1.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  34%|███▍      | 17/50 [00:16<00:17,  1.91it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  34%|███▍      | 17/50 [00:16<00:17,  1.91it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  36%|███▌      | 18/50 [00:17<00:17,  1.83it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  36%|███▌      | 18/50 [00:17<00:17,  1.83it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  38%|███▊      | 19/50 [00:17<00:18,  1.67it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  38%|███▊      | 19/50 [00:17<00:18,  1.67it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  40%|████      | 20/50 [00:18<00:15,  1.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  40%|████      | 20/50 [00:18<00:15,  1.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  42%|████▏     | 21/50 [00:18<00:14,  2.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  42%|████▏     | 21/50 [00:18<00:14,  2.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  44%|████▍     | 22/50 [00:19<00:13,  2.13it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  44%|████▍     | 22/50 [00:19<00:13,  2.13it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  46%|████▌     | 23/50 [00:19<00:15,  1.79it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  46%|████▌     | 23/50 [00:19<00:15,  1.79it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  48%|████▊     | 24/50 [00:20<00:15,  1.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  48%|████▊     | 24/50 [00:20<00:15,  1.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  50%|█████     | 25/50 [00:21<00:17,  1.41it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  50%|█████     | 25/50 [00:21<00:17,  1.41it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  52%|█████▏    | 26/50 [00:22<00:15,  1.53it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  52%|█████▏    | 26/50 [00:22<00:15,  1.53it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  54%|█████▍    | 27/50 [00:22<00:13,  1.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  54%|█████▍    | 27/50 [00:22<00:13,  1.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  56%|█████▌    | 28/50 [00:23<00:13,  1.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  56%|█████▌    | 28/50 [00:23<00:13,  1.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  58%|█████▊    | 29/50 [00:23<00:13,  1.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  58%|█████▊    | 29/50 [00:23<00:13,  1.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  60%|██████    | 30/50 [00:24<00:12,  1.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  60%|██████    | 30/50 [00:24<00:12,  1.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  62%|██████▏   | 31/50 [00:24<00:10,  1.81it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  62%|██████▏   | 31/50 [00:24<00:10,  1.81it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  64%|██████▍   | 32/50 [00:28<00:27,  1.52s/it][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  64%|██████▍   | 32/50 [00:28<00:27,  1.52s/it][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  66%|██████▌   | 33/50 [00:29<00:22,  1.35s/it][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  66%|██████▌   | 33/50 [00:29<00:22,  1.35s/it][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  68%|██████▊   | 34/50 [00:29<00:17,  1.06s/it][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  68%|██████▊   | 34/50 [00:29<00:17,  1.06s/it][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  70%|███████   | 35/50 [00:30<00:12,  1.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  70%|███████   | 35/50 [00:30<00:12,  1.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  72%|███████▏  | 36/50 [00:30<00:10,  1.38it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  72%|███████▏  | 36/50 [00:30<00:10,  1.38it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  74%|███████▍  | 37/50 [00:31<00:08,  1.52it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  74%|███████▍  | 37/50 [00:31<00:08,  1.52it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  76%|███████▌  | 38/50 [00:31<00:06,  1.87it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  76%|███████▌  | 38/50 [00:31<00:06,  1.87it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  78%|███████▊  | 39/50 [00:31<00:05,  2.14it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  78%|███████▊  | 39/50 [00:31<00:05,  2.14it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  80%|████████  | 40/50 [00:31<00:03,  2.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  80%|████████  | 40/50 [00:31<00:03,  2.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  82%|████████▏ | 41/50 [00:32<00:03,  2.59it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  82%|████████▏ | 41/50 [00:32<00:03,  2.59it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  84%|████████▍ | 42/50 [00:32<00:02,  2.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  84%|████████▍ | 42/50 [00:32<00:02,  2.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  86%|████████▌ | 43/50 [00:32<00:02,  3.15it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  86%|████████▌ | 43/50 [00:32<00:02,  3.15it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  88%|████████▊ | 44/50 [00:33<00:01,  3.33it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  88%|████████▊ | 44/50 [00:33<00:01,  3.33it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  90%|█████████ | 45/50 [00:33<00:01,  3.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  90%|█████████ | 45/50 [00:33<00:01,  3.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  92%|█████████▏| 46/50 [00:33<00:01,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  92%|█████████▏| 46/50 [00:33<00:01,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  94%|█████████▍| 47/50 [00:34<00:00,  3.28it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  94%|█████████▍| 47/50 [00:34<00:00,  3.28it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  96%|█████████▌| 48/50 [00:34<00:00,  2.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  96%|█████████▌| 48/50 [00:34<00:00,  2.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  98%|█████████▊| 49/50 [00:34<00:00,  2.64it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]:  98%|█████████▊| 49/50 [00:34<00:00,  2.64it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]: 100%|██████████| 50/50 [00:35<00:00,  3.17it/s][A
+Doing [ exponential_plus_c > no_fit > tree49 ]: 100%|██████████| 50/50 [00:35<00:00,  3.17it/s][A
+                                                                                               [ADoing [ mut0.01 > chars10 > states1 ]:   2%|▎         | 2/80 [00:35<23:05, 17.77s/it]   Doing [ mut0.01 > chars10 > states10 ]:   2%|▎         | 2/80 [00:35<23:05, 17.77s/it]
+  0%|          | 0/50 [00:00<?, ?it/s][A
+  2%|▏         | 1/50 [00:01<01:33,  1.91s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   2%|▏         | 1/50 [00:01<01:33,  1.91s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   4%|▍         | 2/50 [00:02<00:52,  1.10s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   4%|▍         | 2/50 [00:02<00:52,  1.10s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   6%|▌         | 3/50 [00:02<00:36,  1.28it/s][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   6%|▌         | 3/50 [00:02<00:36,  1.28it/s][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   8%|▊         | 4/50 [00:03<00:29,  1.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:   8%|▊         | 4/50 [00:03<00:29,  1.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:  10%|█         | 5/50 [00:03<00:22,  1.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  10%|█         | 5/50 [00:03<00:22,  1.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  12%|█▏        | 6/50 [00:03<00:17,  2.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  12%|█▏        | 6/50 [00:03<00:17,  2.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  14%|█▍        | 7/50 [00:03<00:13,  3.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  14%|█▍        | 7/50 [00:03<00:13,  3.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  16%|█▌        | 8/50 [00:04<00:12,  3.34it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  16%|█▌        | 8/50 [00:04<00:12,  3.34it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  18%|█▊        | 9/50 [00:04<00:11,  3.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  18%|█▊        | 9/50 [00:04<00:11,  3.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  20%|██        | 10/50 [00:04<00:11,  3.48it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  20%|██        | 10/50 [00:04<00:11,  3.48it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  22%|██▏       | 11/50 [00:05<00:12,  3.20it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  22%|██▏       | 11/50 [00:05<00:12,  3.20it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  24%|██▍       | 12/50 [00:05<00:12,  3.13it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  24%|██▍       | 12/50 [00:05<00:12,  3.13it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  26%|██▌       | 13/50 [00:05<00:14,  2.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  26%|██▌       | 13/50 [00:05<00:14,  2.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  28%|██▊       | 14/50 [00:06<00:12,  2.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  28%|██▊       | 14/50 [00:06<00:12,  2.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  30%|███       | 15/50 [00:06<00:12,  2.81it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  30%|███       | 15/50 [00:06<00:12,  2.81it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  32%|███▏      | 16/50 [00:06<00:11,  3.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  32%|███▏      | 16/50 [00:06<00:11,  3.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  34%|███▍      | 17/50 [00:07<00:09,  3.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  34%|███▍      | 17/50 [00:07<00:09,  3.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  36%|███▌      | 18/50 [00:07<00:09,  3.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  36%|███▌      | 18/50 [00:07<00:09,  3.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  38%|███▊      | 19/50 [00:07<00:08,  3.56it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  38%|███▊      | 19/50 [00:07<00:08,  3.56it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  40%|████      | 20/50 [00:07<00:07,  4.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  40%|████      | 20/50 [00:07<00:07,  4.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  42%|████▏     | 21/50 [00:07<00:07,  3.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  42%|████▏     | 21/50 [00:07<00:07,  3.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  44%|████▍     | 22/50 [00:08<00:05,  4.72it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  44%|████▍     | 22/50 [00:08<00:05,  4.72it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  46%|████▌     | 23/50 [00:08<00:06,  4.00it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  46%|████▌     | 23/50 [00:08<00:06,  4.00it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  48%|████▊     | 24/50 [00:08<00:07,  3.27it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  48%|████▊     | 24/50 [00:08<00:07,  3.27it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  50%|█████     | 25/50 [00:09<00:09,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  50%|█████     | 25/50 [00:09<00:09,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  52%|█████▏    | 26/50 [00:09<00:07,  3.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  52%|█████▏    | 26/50 [00:09<00:07,  3.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  54%|█████▍    | 27/50 [00:09<00:06,  3.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  54%|█████▍    | 27/50 [00:09<00:06,  3.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  56%|█████▌    | 28/50 [00:10<00:06,  3.42it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  56%|█████▌    | 28/50 [00:10<00:06,  3.42it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  58%|█████▊    | 29/50 [00:10<00:06,  3.33it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  58%|█████▊    | 29/50 [00:10<00:06,  3.33it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  60%|██████    | 30/50 [00:10<00:05,  3.83it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  60%|██████    | 30/50 [00:10<00:05,  3.83it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  62%|██████▏   | 31/50 [00:10<00:05,  3.70it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  62%|██████▏   | 31/50 [00:10<00:05,  3.70it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  64%|██████▍   | 32/50 [00:11<00:04,  3.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  64%|██████▍   | 32/50 [00:11<00:04,  3.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  66%|██████▌   | 33/50 [00:11<00:05,  3.12it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  66%|██████▌   | 33/50 [00:11<00:05,  3.12it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  68%|██████▊   | 34/50 [00:11<00:04,  3.57it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  68%|██████▊   | 34/50 [00:11<00:04,  3.57it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  70%|███████   | 35/50 [00:11<00:03,  3.88it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  70%|███████   | 35/50 [00:11<00:03,  3.88it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  72%|███████▏  | 36/50 [00:12<00:03,  4.37it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  72%|███████▏  | 36/50 [00:12<00:03,  4.37it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  74%|███████▍  | 37/50 [00:12<00:03,  3.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  74%|███████▍  | 37/50 [00:12<00:03,  3.51it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  76%|███████▌  | 38/50 [00:12<00:02,  4.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  76%|███████▌  | 38/50 [00:12<00:02,  4.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  78%|███████▊  | 39/50 [00:12<00:02,  4.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  78%|███████▊  | 39/50 [00:12<00:02,  4.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  80%|████████  | 40/50 [00:13<00:02,  4.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  80%|████████  | 40/50 [00:13<00:02,  4.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  82%|████████▏ | 41/50 [00:13<00:02,  4.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  82%|████████▏ | 41/50 [00:13<00:02,  4.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  84%|████████▍ | 42/50 [00:13<00:02,  2.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  84%|████████▍ | 42/50 [00:13<00:02,  2.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  86%|████████▌ | 43/50 [00:14<00:01,  3.70it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  86%|████████▌ | 43/50 [00:14<00:01,  3.70it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  88%|████████▊ | 44/50 [00:14<00:01,  4.24it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  88%|████████▊ | 44/50 [00:14<00:01,  4.24it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  90%|█████████ | 45/50 [00:14<00:01,  3.96it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  90%|█████████ | 45/50 [00:14<00:01,  3.96it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  92%|█████████▏| 46/50 [00:14<00:01,  3.21it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  92%|█████████▏| 46/50 [00:15<00:01,  3.21it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  94%|█████████▍| 47/50 [00:15<00:01,  2.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  94%|█████████▍| 47/50 [00:15<00:01,  2.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  96%|█████████▌| 48/50 [00:15<00:00,  2.81it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  96%|█████████▌| 48/50 [00:15<00:00,  2.81it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  98%|█████████▊| 49/50 [00:16<00:00,  2.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]:  98%|█████████▊| 49/50 [00:16<00:00,  2.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]: 100%|██████████| 50/50 [00:16<00:00,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree49 ]: 100%|██████████| 50/50 [00:16<00:00,  2.73it/s][A
+                                                                                               [ADoing [ mut0.01 > chars10 > states10 ]:   4%|▍         | 3/80 [00:52<22:17, 17.37s/it]Doing [ mut0.01 > chars10 > states50 ]:   4%|▍         | 3/80 [00:52<22:17, 17.37s/it]
+  0%|          | 0/50 [00:00<?, ?it/s][A
+  2%|▏         | 1/50 [00:01<01:33,  1.90s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   2%|▏         | 1/50 [00:01<01:33,  1.90s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   4%|▍         | 2/50 [00:02<00:52,  1.09s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   4%|▍         | 2/50 [00:02<00:52,  1.09s/it][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   6%|▌         | 3/50 [00:02<00:51,  1.09s/it][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   8%|▊         | 4/50 [00:02<00:26,  1.72it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:   8%|▊         | 4/50 [00:02<00:26,  1.72it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:  10%|█         | 5/50 [00:03<00:22,  2.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  10%|█         | 5/50 [00:03<00:22,  2.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  12%|█▏        | 6/50 [00:03<00:17,  2.50it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  12%|█▏        | 6/50 [00:03<00:17,  2.50it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  14%|█▍        | 7/50 [00:03<00:14,  2.96it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  14%|█▍        | 7/50 [00:03<00:14,  2.96it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  16%|█▌        | 8/50 [00:04<00:15,  2.79it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  16%|█▌        | 8/50 [00:04<00:15,  2.79it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  18%|█▊        | 9/50 [00:04<00:12,  3.28it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  18%|█▊        | 9/50 [00:04<00:12,  3.28it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  20%|██        | 10/50 [00:04<00:11,  3.44it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  20%|██        | 10/50 [00:04<00:11,  3.44it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  22%|██▏       | 11/50 [00:04<00:09,  4.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  22%|██▏       | 11/50 [00:04<00:09,  4.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  24%|██▍       | 12/50 [00:04<00:10,  3.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  24%|██▍       | 12/50 [00:05<00:10,  3.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  26%|██▌       | 13/50 [00:05<00:17,  2.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  26%|██▌       | 13/50 [00:05<00:17,  2.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  28%|██▊       | 14/50 [00:06<00:14,  2.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  28%|██▊       | 14/50 [00:06<00:14,  2.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  30%|███       | 15/50 [00:06<00:13,  2.59it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  30%|███       | 15/50 [00:06<00:13,  2.59it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  32%|███▏      | 16/50 [00:06<00:12,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  32%|███▏      | 16/50 [00:06<00:12,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  34%|███▍      | 17/50 [00:07<00:10,  3.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  34%|███▍      | 17/50 [00:07<00:10,  3.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  36%|███▌      | 18/50 [00:07<00:10,  3.19it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  38%|███▊      | 19/50 [00:07<00:07,  4.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  38%|███▊      | 19/50 [00:07<00:07,  4.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  40%|████      | 20/50 [00:07<00:06,  4.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  40%|████      | 20/50 [00:07<00:06,  4.55it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  42%|████▏     | 21/50 [00:07<00:06,  4.45it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  42%|████▏     | 21/50 [00:08<00:06,  4.45it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  44%|████▍     | 22/50 [00:08<00:09,  2.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  44%|████▍     | 22/50 [00:08<00:09,  2.98it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  46%|████▌     | 23/50 [00:08<00:08,  3.24it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  46%|████▌     | 23/50 [00:08<00:08,  3.24it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  48%|████▊     | 24/50 [00:09<00:08,  2.93it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  48%|████▊     | 24/50 [00:09<00:08,  2.93it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  50%|█████     | 25/50 [00:09<00:08,  2.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  50%|█████     | 25/50 [00:09<00:08,  2.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  52%|█████▏    | 26/50 [00:09<00:07,  3.02it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  52%|█████▏    | 26/50 [00:09<00:07,  3.02it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  54%|█████▍    | 27/50 [00:09<00:06,  3.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  54%|█████▍    | 27/50 [00:09<00:06,  3.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  56%|█████▌    | 28/50 [00:10<00:05,  3.86it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  56%|█████▌    | 28/50 [00:10<00:05,  3.86it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  58%|█████▊    | 29/50 [00:10<00:05,  3.58it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  58%|█████▊    | 29/50 [00:10<00:05,  3.58it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  60%|██████    | 30/50 [00:10<00:04,  4.36it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  60%|██████    | 30/50 [00:10<00:04,  4.36it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  62%|██████▏   | 31/50 [00:10<00:04,  3.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  62%|██████▏   | 31/50 [00:10<00:04,  3.82it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  64%|██████▍   | 32/50 [00:11<00:04,  3.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  64%|██████▍   | 32/50 [00:11<00:04,  3.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  66%|██████▌   | 33/50 [00:11<00:04,  4.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  66%|██████▌   | 33/50 [00:11<00:04,  4.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  68%|██████▊   | 34/50 [00:11<00:05,  3.08it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  68%|██████▊   | 34/50 [00:11<00:05,  3.08it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  70%|███████   | 35/50 [00:12<00:04,  3.29it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  70%|███████   | 35/50 [00:12<00:04,  3.29it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  72%|███████▏  | 36/50 [00:12<00:03,  3.88it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  72%|███████▏  | 36/50 [00:12<00:03,  3.88it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  74%|███████▍  | 37/50 [00:12<00:03,  3.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  74%|███████▍  | 37/50 [00:12<00:03,  3.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  76%|███████▌  | 38/50 [00:12<00:03,  3.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  76%|███████▌  | 38/50 [00:13<00:03,  3.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  78%|███████▊  | 39/50 [00:13<00:05,  2.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  78%|███████▊  | 39/50 [00:13<00:05,  2.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  80%|████████  | 40/50 [00:13<00:03,  2.68it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  80%|████████  | 40/50 [00:13<00:03,  2.68it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  82%|████████▏ | 41/50 [00:14<00:02,  3.16it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  82%|████████▏ | 41/50 [00:14<00:02,  3.16it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  84%|████████▍ | 42/50 [00:14<00:02,  3.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  84%|████████▍ | 42/50 [00:14<00:02,  3.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  86%|████████▌ | 43/50 [00:14<00:02,  3.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  86%|████████▌ | 43/50 [00:14<00:02,  3.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  88%|████████▊ | 44/50 [00:15<00:02,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  88%|████████▊ | 44/50 [00:15<00:02,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  90%|█████████ | 45/50 [00:15<00:01,  2.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  90%|█████████ | 45/50 [00:15<00:01,  2.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  92%|█████████▏| 46/50 [00:15<00:01,  2.65it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  92%|█████████▏| 46/50 [00:15<00:01,  2.65it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  94%|█████████▍| 47/50 [00:16<00:00,  3.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  94%|█████████▍| 47/50 [00:16<00:00,  3.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  96%|█████████▌| 48/50 [00:16<00:00,  3.01it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  96%|█████████▌| 48/50 [00:16<00:00,  3.01it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  98%|█████████▊| 49/50 [00:16<00:00,  2.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]:  98%|█████████▊| 49/50 [00:16<00:00,  2.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]: 100%|██████████| 50/50 [00:17<00:00,  2.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree49 ]: 100%|██████████| 50/50 [00:17<00:00,  2.97it/s][A
+                                                                                               [ADoing [ mut0.01 > chars10 > states50 ]:   5%|▌         | 4/80 [01:09<22:03, 17.42s/it]Doing [ mut0.01 > chars10 > states100 ]:   5%|▌         | 4/80 [01:09<22:03, 17.42s/it]
+  0%|          | 0/50 [00:00<?, ?it/s][A
+  2%|▏         | 1/50 [00:01<01:32,  1.90s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   2%|▏         | 1/50 [00:01<01:32,  1.90s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   4%|▍         | 2/50 [00:02<00:51,  1.07s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   4%|▍         | 2/50 [00:02<00:51,  1.07s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   6%|▌         | 3/50 [00:02<00:30,  1.53it/s][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   6%|▌         | 3/50 [00:02<00:30,  1.53it/s][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   8%|▊         | 4/50 [00:02<00:25,  1.77it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:   8%|▊         | 4/50 [00:02<00:25,  1.77it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:  10%|█         | 5/50 [00:03<00:22,  1.99it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  10%|█         | 5/50 [00:03<00:22,  1.99it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  12%|█▏        | 6/50 [00:03<00:16,  2.59it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  12%|█▏        | 6/50 [00:03<00:16,  2.59it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  14%|█▍        | 7/50 [00:03<00:14,  3.00it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  14%|█▍        | 7/50 [00:03<00:14,  3.00it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  16%|█▌        | 8/50 [00:03<00:12,  3.40it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  16%|█▌        | 8/50 [00:03<00:12,  3.40it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  18%|█▊        | 9/50 [00:04<00:11,  3.58it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  18%|█▊        | 9/50 [00:04<00:11,  3.58it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  20%|██        | 10/50 [00:04<00:11,  3.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  20%|██        | 10/50 [00:04<00:11,  3.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  22%|██▏       | 11/50 [00:04<00:08,  4.39it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  22%|██▏       | 11/50 [00:04<00:08,  4.39it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  24%|██▍       | 12/50 [00:04<00:09,  3.93it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  24%|██▍       | 12/50 [00:04<00:09,  3.93it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  26%|██▌       | 13/50 [00:05<00:11,  3.31it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  26%|██▌       | 13/50 [00:05<00:11,  3.31it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  28%|██▊       | 14/50 [00:05<00:09,  3.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  28%|██▊       | 14/50 [00:05<00:09,  3.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  30%|███       | 15/50 [00:05<00:10,  3.34it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  30%|███       | 15/50 [00:05<00:10,  3.34it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  32%|███▏      | 16/50 [00:06<00:08,  3.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  32%|███▏      | 16/50 [00:06<00:08,  3.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  34%|███▍      | 17/50 [00:06<00:08,  4.12it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  34%|███▍      | 17/50 [00:06<00:08,  4.12it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  36%|███▌      | 18/50 [00:06<00:07,  4.12it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  38%|███▊      | 19/50 [00:06<00:06,  4.48it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  38%|███▊      | 19/50 [00:06<00:06,  4.48it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  40%|████      | 20/50 [00:06<00:06,  4.80it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  40%|████      | 20/50 [00:06<00:06,  4.80it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  42%|████▏     | 21/50 [00:06<00:05,  5.35it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  42%|████▏     | 21/50 [00:06<00:05,  5.35it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  44%|████▍     | 22/50 [00:07<00:04,  5.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  44%|████▍     | 22/50 [00:07<00:04,  5.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  46%|████▌     | 23/50 [00:07<00:05,  5.33it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  46%|████▌     | 23/50 [00:07<00:05,  5.33it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  48%|████▊     | 24/50 [00:07<00:06,  3.96it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  48%|████▊     | 24/50 [00:07<00:06,  3.96it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  50%|█████     | 25/50 [00:08<00:07,  3.26it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  50%|█████     | 25/50 [00:08<00:07,  3.26it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  52%|█████▏    | 26/50 [00:08<00:06,  3.57it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  52%|█████▏    | 26/50 [00:08<00:06,  3.57it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  54%|█████▍    | 27/50 [00:08<00:05,  4.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  54%|█████▍    | 27/50 [00:08<00:05,  4.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  56%|█████▌    | 28/50 [00:08<00:05,  4.05it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  56%|█████▌    | 28/50 [00:08<00:05,  4.05it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  58%|█████▊    | 29/50 [00:08<00:04,  4.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  58%|█████▊    | 29/50 [00:08<00:04,  4.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  60%|██████    | 30/50 [00:09<00:05,  3.91it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  60%|██████    | 30/50 [00:09<00:05,  3.91it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  62%|██████▏   | 31/50 [00:09<00:04,  3.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  62%|██████▏   | 31/50 [00:09<00:04,  3.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  64%|██████▍   | 32/50 [00:09<00:05,  3.34it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  64%|██████▍   | 32/50 [00:09<00:05,  3.34it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  66%|██████▌   | 33/50 [00:10<00:05,  3.30it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  66%|██████▌   | 33/50 [00:10<00:05,  3.30it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  68%|██████▊   | 34/50 [00:10<00:04,  3.68it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  68%|██████▊   | 34/50 [00:10<00:04,  3.68it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  70%|███████   | 35/50 [00:10<00:03,  4.21it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  70%|███████   | 35/50 [00:10<00:03,  4.21it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  72%|███████▏  | 36/50 [00:10<00:03,  3.64it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  72%|███████▏  | 36/50 [00:11<00:03,  3.64it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  74%|███████▍  | 37/50 [00:11<00:05,  2.36it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  74%|███████▍  | 37/50 [00:11<00:05,  2.36it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  76%|███████▌  | 38/50 [00:12<00:04,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  76%|███████▌  | 38/50 [00:12<00:04,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  78%|███████▊  | 39/50 [00:12<00:03,  3.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  78%|███████▊  | 39/50 [00:12<00:03,  3.04it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  80%|████████  | 40/50 [00:12<00:02,  3.38it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  80%|████████  | 40/50 [00:12<00:02,  3.38it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  82%|████████▏ | 41/50 [00:12<00:02,  3.56it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  82%|████████▏ | 41/50 [00:12<00:02,  3.56it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  84%|████████▍ | 42/50 [00:12<00:02,  3.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  84%|████████▍ | 42/50 [00:12<00:02,  3.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  86%|████████▌ | 43/50 [00:13<00:01,  4.13it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  86%|████████▌ | 43/50 [00:13<00:01,  4.13it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  88%|████████▊ | 44/50 [00:13<00:01,  3.49it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  88%|████████▊ | 44/50 [00:13<00:01,  3.49it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  90%|█████████ | 45/50 [00:13<00:01,  3.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  90%|█████████ | 45/50 [00:13<00:01,  3.54it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  92%|█████████▏| 46/50 [00:14<00:01,  2.92it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  92%|█████████▏| 46/50 [00:14<00:01,  2.92it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  94%|█████████▍| 47/50 [00:14<00:00,  3.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  94%|█████████▍| 47/50 [00:14<00:00,  3.60it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  96%|█████████▌| 48/50 [00:14<00:00,  3.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  96%|█████████▌| 48/50 [00:14<00:00,  3.43it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  98%|█████████▊| 49/50 [00:15<00:00,  3.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]:  98%|█████████▊| 49/50 [00:15<00:00,  3.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]: 100%|██████████| 50/50 [00:15<00:00,  3.63it/s][A
+Doing [ exponential_plus_c > no_fit > tree49 ]: 100%|██████████| 50/50 [00:15<00:00,  3.63it/s][A
+                                                                                               [ADoing [ mut0.01 > chars10 > states100 ]:   6%|▋         | 5/80 [01:25<21:00, 16.81s/it]Doing [ mut0.01 > chars20 > states1 ]:   6%|▋         | 5/80 [01:25<21:00, 16.81s/it]  
+  0%|          | 0/50 [00:00<?, ?it/s][A
+  2%|▏         | 1/50 [00:01<01:33,  1.92s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   2%|▏         | 1/50 [00:01<01:33,  1.92s/it][A
+Doing [ exponential_plus_c > no_fit > tree0 ]:   4%|▍         | 2/50 [00:02<00:52,  1.09s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   4%|▍         | 2/50 [00:02<00:52,  1.09s/it][A
+Doing [ exponential_plus_c > no_fit > tree1 ]:   6%|▌         | 3/50 [00:02<00:32,  1.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   6%|▌         | 3/50 [00:02<00:32,  1.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree2 ]:   8%|▊         | 4/50 [00:03<00:25,  1.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:   8%|▊         | 4/50 [00:03<00:25,  1.78it/s][A
+Doing [ exponential_plus_c > no_fit > tree3 ]:  10%|█         | 5/50 [00:03<00:21,  2.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  10%|█         | 5/50 [00:03<00:21,  2.10it/s][A
+Doing [ exponential_plus_c > no_fit > tree4 ]:  12%|█▏        | 6/50 [00:03<00:23,  1.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  12%|█▏        | 6/50 [00:03<00:23,  1.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree5 ]:  14%|█▍        | 7/50 [00:04<00:17,  2.45it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  14%|█▍        | 7/50 [00:04<00:17,  2.45it/s][A
+Doing [ exponential_plus_c > no_fit > tree6 ]:  16%|█▌        | 8/50 [00:04<00:16,  2.53it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  16%|█▌        | 8/50 [00:04<00:16,  2.53it/s][A
+Doing [ exponential_plus_c > no_fit > tree7 ]:  18%|█▊        | 9/50 [00:04<00:16,  2.44it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  18%|█▊        | 9/50 [00:04<00:16,  2.44it/s][A
+Doing [ exponential_plus_c > no_fit > tree8 ]:  20%|██        | 10/50 [00:05<00:16,  2.40it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  20%|██        | 10/50 [00:05<00:16,  2.40it/s][A
+Doing [ exponential_plus_c > no_fit > tree9 ]:  22%|██▏       | 11/50 [00:05<00:14,  2.76it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  22%|██▏       | 11/50 [00:05<00:14,  2.76it/s][A
+Doing [ exponential_plus_c > no_fit > tree10 ]:  24%|██▍       | 12/50 [00:06<00:14,  2.65it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  24%|██▍       | 12/50 [00:06<00:14,  2.65it/s][A
+Doing [ exponential_plus_c > no_fit > tree11 ]:  26%|██▌       | 13/50 [00:06<00:17,  2.14it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  26%|██▌       | 13/50 [00:06<00:17,  2.14it/s][A
+Doing [ exponential_plus_c > no_fit > tree12 ]:  28%|██▊       | 14/50 [00:07<00:16,  2.15it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  28%|██▊       | 14/50 [00:07<00:16,  2.15it/s][A
+Doing [ exponential_plus_c > no_fit > tree13 ]:  30%|███       | 15/50 [00:07<00:17,  2.00it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  30%|███       | 15/50 [00:07<00:17,  2.00it/s][A
+Doing [ exponential_plus_c > no_fit > tree14 ]:  32%|███▏      | 16/50 [00:08<00:13,  2.49it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  32%|███▏      | 16/50 [00:08<00:13,  2.49it/s][A
+Doing [ exponential_plus_c > no_fit > tree15 ]:  34%|███▍      | 17/50 [00:08<00:13,  2.45it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  34%|███▍      | 17/50 [00:08<00:13,  2.45it/s][A
+Doing [ exponential_plus_c > no_fit > tree16 ]:  36%|███▌      | 18/50 [00:08<00:11,  2.67it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  36%|███▌      | 18/50 [00:08<00:11,  2.67it/s][A
+Doing [ exponential_plus_c > no_fit > tree17 ]:  38%|███▊      | 19/50 [00:08<00:11,  2.80it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  38%|███▊      | 19/50 [00:08<00:11,  2.80it/s][A
+Doing [ exponential_plus_c > no_fit > tree18 ]:  40%|████      | 20/50 [00:09<00:08,  3.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  40%|████      | 20/50 [00:09<00:08,  3.46it/s][A
+Doing [ exponential_plus_c > no_fit > tree19 ]:  42%|████▏     | 21/50 [00:09<00:09,  3.07it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  42%|████▏     | 21/50 [00:09<00:09,  3.07it/s][A
+Doing [ exponential_plus_c > no_fit > tree20 ]:  44%|████▍     | 22/50 [00:09<00:09,  3.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  44%|████▍     | 22/50 [00:09<00:09,  3.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree21 ]:  46%|████▌     | 23/50 [00:10<00:09,  2.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  46%|████▌     | 23/50 [00:10<00:09,  2.74it/s][A
+Doing [ exponential_plus_c > no_fit > tree22 ]:  48%|████▊     | 24/50 [00:10<00:11,  2.20it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  48%|████▊     | 24/50 [00:10<00:11,  2.20it/s][A
+Doing [ exponential_plus_c > no_fit > tree23 ]:  50%|█████     | 25/50 [00:11<00:12,  2.08it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  50%|█████     | 25/50 [00:11<00:12,  2.08it/s][A
+Doing [ exponential_plus_c > no_fit > tree24 ]:  52%|█████▏    | 26/50 [00:11<00:11,  2.07it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  52%|█████▏    | 26/50 [00:11<00:11,  2.07it/s][A
+Doing [ exponential_plus_c > no_fit > tree25 ]:  54%|█████▍    | 27/50 [00:12<00:08,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  54%|█████▍    | 27/50 [00:12<00:08,  2.66it/s][A
+Doing [ exponential_plus_c > no_fit > tree26 ]:  56%|█████▌    | 28/50 [00:12<00:07,  3.02it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  56%|█████▌    | 28/50 [00:12<00:07,  3.02it/s][A
+Doing [ exponential_plus_c > no_fit > tree27 ]:  58%|█████▊    | 29/50 [00:12<00:06,  3.23it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  58%|█████▊    | 29/50 [00:12<00:06,  3.23it/s][A
+Doing [ exponential_plus_c > no_fit > tree28 ]:  60%|██████    | 30/50 [00:12<00:06,  3.24it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  60%|██████    | 30/50 [00:12<00:06,  3.24it/s][A
+Doing [ exponential_plus_c > no_fit > tree29 ]:  62%|██████▏   | 31/50 [00:13<00:06,  3.14it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  62%|██████▏   | 31/50 [00:13<00:06,  3.14it/s][A
+Doing [ exponential_plus_c > no_fit > tree30 ]:  64%|██████▍   | 32/50 [00:13<00:06,  2.89it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  64%|██████▍   | 32/50 [00:13<00:06,  2.89it/s][A
+Doing [ exponential_plus_c > no_fit > tree31 ]:  66%|██████▌   | 33/50 [00:13<00:05,  2.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  66%|██████▌   | 33/50 [00:13<00:05,  2.97it/s][A
+Doing [ exponential_plus_c > no_fit > tree32 ]:  68%|██████▊   | 34/50 [00:14<00:05,  2.72it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  68%|██████▊   | 34/50 [00:14<00:05,  2.72it/s][A
+Doing [ exponential_plus_c > no_fit > tree33 ]:  70%|███████   | 35/50 [00:14<00:04,  3.30it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  70%|███████   | 35/50 [00:14<00:04,  3.30it/s][A
+Doing [ exponential_plus_c > no_fit > tree34 ]:  72%|███████▏  | 36/50 [00:14<00:04,  3.42it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  72%|███████▏  | 36/50 [00:14<00:04,  3.42it/s][A
+Doing [ exponential_plus_c > no_fit > tree35 ]:  74%|███████▍  | 37/50 [00:15<00:04,  2.64it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  74%|███████▍  | 37/50 [00:15<00:04,  2.64it/s][A
+Doing [ exponential_plus_c > no_fit > tree36 ]:  76%|███████▌  | 38/50 [00:15<00:04,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  76%|███████▌  | 38/50 [00:15<00:04,  2.73it/s][A
+Doing [ exponential_plus_c > no_fit > tree37 ]:  78%|███████▊  | 39/50 [00:16<00:03,  2.89it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  78%|███████▊  | 39/50 [00:16<00:03,  2.89it/s][A
+Doing [ exponential_plus_c > no_fit > tree38 ]:  80%|████████  | 40/50 [00:16<00:02,  3.48it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  80%|████████  | 40/50 [00:16<00:02,  3.48it/s][A
+Doing [ exponential_plus_c > no_fit > tree39 ]:  82%|████████▏ | 41/50 [00:16<00:02,  3.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  82%|████████▏ | 41/50 [00:16<00:02,  3.06it/s][A
+Doing [ exponential_plus_c > no_fit > tree40 ]:  84%|████████▍ | 42/50 [00:16<00:02,  3.26it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  84%|████████▍ | 42/50 [00:16<00:02,  3.26it/s][A
+Doing [ exponential_plus_c > no_fit > tree41 ]:  86%|████████▌ | 43/50 [00:17<00:02,  3.27it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  86%|████████▌ | 43/50 [00:17<00:02,  3.27it/s][A
+Doing [ exponential_plus_c > no_fit > tree42 ]:  88%|████████▊ | 44/50 [00:17<00:01,  3.09it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  88%|████████▊ | 44/50 [00:17<00:01,  3.09it/s][A
+Doing [ exponential_plus_c > no_fit > tree43 ]:  90%|█████████ | 45/50 [00:17<00:01,  3.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  90%|█████████ | 45/50 [00:17<00:01,  3.11it/s][A
+Doing [ exponential_plus_c > no_fit > tree44 ]:  92%|█████████▏| 46/50 [00:18<00:01,  2.70it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  92%|█████████▏| 46/50 [00:18<00:01,  2.70it/s][A
+Doing [ exponential_plus_c > no_fit > tree45 ]:  94%|█████████▍| 47/50 [00:18<00:00,  3.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  94%|█████████▍| 47/50 [00:18<00:00,  3.25it/s][A
+Doing [ exponential_plus_c > no_fit > tree46 ]:  96%|█████████▌| 48/50 [00:18<00:00,  2.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  96%|█████████▌| 48/50 [00:18<00:00,  2.90it/s][A
+Doing [ exponential_plus_c > no_fit > tree47 ]:  98%|█████████▊| 49/50 [00:19<00:00,  2.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]:  98%|█████████▊| 49/50 [00:19<00:00,  2.47it/s][A
+Doing [ exponential_plus_c > no_fit > tree48 ]: 100%|██████████| 50/50 [00:19<00:00,  2.75it/s][A
+Doing [ exponential_plus_c > no_fit > tree49 ]: 100%|██████████| 50/50 [00:19<00:00,  2.75it/s][A
+                                                                                               [ADoing [ mut0.01 > chars20 > states1 ]:   8%|▊         | 6/80 [01:46<22:15, 18.05s/it]Doing [ mut0.01 > chars20 > states10 ]:   8%|▊         | 6/80 [01:46<22:15, 18.05s/it]
+  0%|          | 0/50 [00:00<?, ?it/s][Aslurmstepd-s134: error: *** JOB 64571 ON s134 CANCELLED AT 2022-03-17T19:27:25 ***

@@ -10,8 +10,9 @@ def ewhd_given_h(num_sites, mut_rate, collision_rate, height, time):
     r = mut_rate
     q = collision_rate
     h = height
+    # print(f'### HEIGHT: {h}')
     
-    return (2 * (1 - np.exp(-h * r)) ** 2 * (1 - q) + 2 * (1 - np.exp(-h * r)) * (np.exp(-h * r))) * (np.exp(r * (h - t))) * k
+    return (2 * (1 - np.exp(-h * r)) ** 2 * (1 - q) + 2 * (1 - np.exp(-h * r)) * (np.exp(-h * r))) * (np.exp(r * (h - t))) 
 
 def simulate(num_sites, mut_rate, collision_rate, height, time, sample):
     total = 0
@@ -60,15 +61,16 @@ def graph(num_sites, mut_rate, collision_rate, time, increment):
     ax.set_title(title)
     plt.savefig(title + '.jpg') 
 
-def inverse(f, y, lower, upper, error_tolerance):
+def inverse(f, y, lower, upper, error_tolerance, depth):
     x = (upper + lower) / 2.0
-    if abs(f(x) - y) < error_tolerance:
+    # print(abs(f(x) - y))
+    if abs(f(x) - y) < error_tolerance or depth >= 10:
         return x
     elif f(x) < y:
-        return inverse(f, y, x, upper, error_tolerance)
+        return inverse(f, y, x, upper, error_tolerance, depth+1)
     else:
-        return inverse(f, y, lower, x, error_tolerance)
+        return inverse(f, y, lower, x, error_tolerance, depth+1)
 
-def ewhd_inv(num_sites, mut_rate, collision_rate, h, time, error_tolerance):
+def ewhd_inv(num_sites, mut_rate, collision_rate, whd, time, error_tolerance):
     f = lambda x: ewhd_given_h(num_sites, mut_rate, collision_rate, x, time)
-    return inverse(f, h, 0, time,  error_tolerance)
+    return inverse(f, whd, 0, time,  error_tolerance, 0)

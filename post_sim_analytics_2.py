@@ -11,8 +11,10 @@ import cassiopeia as cas
 # argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-t", type=int, help="job number", default=1)
+parser.add_argument("--cached", action='store_true', help="load from cache", default=False)
 args = parser.parse_args()
 t = args.t
+cached = args.cached
 og_t = t
 
 # Load config
@@ -24,13 +26,16 @@ out_folder = "./post_sim_analytics/"
 in_tree_raw = config["tree_dir"]
 
 # Helper Functions
+is_cached = False
 def get_dists(tree, dists_file):
-    if os.path.isfile(dists_file):
+    if cached and os.path.isfile(dists_file):
         try:
             dists = pic.load(open(dists_file, "rb"))
-            if np.isnan(dists.tolist()).all():
+            if np.isnan(dists.tolist()).all():  # type: ignore
                 pass
             else:
+                global is_cached
+                is_cached = True
                 return dists
         except:
             pass
@@ -50,7 +55,7 @@ def get_dists(tree, dists_file):
 def get_dissim_whd(tree, in_tree_path, numtree):
     dissim_file = in_tree_path + "dissim_whd" + str(numtree) + ".pkl"
 
-    if os.path.isfile(dists_file):
+    if cached and os.path.isfile(dists_file):
         try:
             return pic.load(open(dissim_file, "rb"))
         except:
@@ -58,7 +63,7 @@ def get_dissim_whd(tree, in_tree_path, numtree):
 
     # Get computed dissimilarity matrix.
     tree.compute_dissimilarity_map(
-        dissimilarity_function=cas.solver.dissimilarity_functions.weighted_hamming_distance
+        dissimilarity_function=cas.solver.dissimilarity_functions.weighted_hamming_distance  # type: ignore
     )
     dissim_raw = tree.get_dissimilarity_map()
     dissim = melt_triu(dissim_raw)
@@ -68,11 +73,11 @@ def get_dissim_whd(tree, in_tree_path, numtree):
 
 
 def melt_triu(dataf):
-    return np.fliplr(dataf.values)[np.triu_indices_from(dataf)]
+    return dataf.values[np.triu_indices_from(dataf, 1)]
 
 
 # mathy math
-t, numtree = divmod(t, 12)
+t, numtree = divmod(t, 50)
 t, numstates_idx = divmod(t, len(config["numstates"]))
 t, numcassetes_idx = divmod(t, len(config["numcassettes"]))
 t, mutrate_idx = divmod(t, len(config["mutation_proportions"]))
@@ -82,6 +87,7 @@ in_tree_path = in_tree_raw.format(
     mutation_proportions=config["mutation_proportions"][mutrate_idx],
     numcassettes=config["numcassettes"][numcassetes_idx],
     numstates=config["numstates"][numstates_idx],
+    numcells=config['numcells']
 )
 
 # get tree
@@ -102,6 +108,6 @@ dists_melt = get_dists(tree, dists_file)
 
 # get dissims
 dissim_melt = get_dissim_whd(tree, in_tree_path, numtree)
-print("Done for t=" + str(og_t))
+print("Done for t=" + str(og_t) + f". Cached: {is_cached}. --> {tree_file}")
 
 
