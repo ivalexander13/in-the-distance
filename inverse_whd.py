@@ -12,7 +12,7 @@ def ewhd_given_h(num_sites, mut_rate, collision_rate, height, time):
     h = height
     # print(f'### HEIGHT: {h}')
     
-    return (2 * (1 - np.exp(-h * r)) ** 2 * (1 - q) + 2 * (1 - np.exp(-h * r)) * (np.exp(-h * r))) * (np.exp(r * (h - t))) 
+    return (2 * (1 - np.exp(-h * r)) ** 2 * (1 - q) + 2 * (1 - np.exp(-h * r)) * (np.exp(-h * r))) * (np.exp(r * (h - t)))   # type: ignore
 
 def simulate(num_sites, mut_rate, collision_rate, height, time, sample):
     total = 0

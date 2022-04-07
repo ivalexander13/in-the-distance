@@ -3,6 +3,8 @@ import pickle as pic
 
 import cassiopeia.solver as solver
 from cassiopeia.data.CassiopeiaTree import CassiopeiaTree
+from cassiopeia.solver import dissimilarity_functions
+from nj_iwhd import InverseNJSolver
 
 def main():
     parser = argparse.ArgumentParser()
@@ -73,9 +75,8 @@ def main():
         tree_solver = solver.STDRSolver(similarity_function = solver.stdr_similarity.hamming_sim)
     elif alg == "stdr_inverse_distance":
         tree_solver = solver.STDRSolver(similarity_function = solver.stdr_similarity.inverse_exponential_weighted_hamming_distance)
-    elif alg == "snj_dist exp_hamming":
-        tree_solver = solver.SpectralNeighborJoiningSolver()
-    elif alg == "snj_dist "
+    elif alg == "nj_iwhd":
+        tree_solver = InverseNJSolver(add_root=True)
 
     # Initialize the reconstructed tree, with or without priors
     if use_priors:
