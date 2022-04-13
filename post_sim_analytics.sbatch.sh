@@ -25,4 +25,4 @@ NEW_ARRAY_ID=$(($SLURM_ARRAY_TASK_ID + 2000))
 
 echo "Running with: $NEW_ARRAY_ID"
 
-python post_sim_analytics_2.py -t $NEW_ARRAY_ID --cached
+python post_sim_analytics.py -t $NEW_ARRAY_ID --cached
