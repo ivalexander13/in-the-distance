@@ -1,8 +1,8 @@
 #!/bin/bash
 # Submission script for yosef partition
 # Check job status with: squeue --format="%.18i %.9P %.30j %.8u %.8T %.10M %.9l %.6D %R"
-#SBATCH --job-name=Ivans_Tree_Simulator
-#SBATCH --array=0-47
+#SBATCH --job-name=Ivans_Dist_Getter
+#SBATCH --array=0-399
 #SBATCH --time=100-00:00:00 # days-hh:mm:ss
 #
 #SBATCH --ntasks=1
@@ -13,17 +13,16 @@
 # SBATCH --comment= # I don't care
 #
 #SBATCH --open-mode=append
-#SBATCH --output=logs/sim_trees/sim_trees.job%A.stdout
-#SBATCH --error=logs/sim_trees/sim_trees.job%A.stderr
+#SBATCH --output=logs/post_sim/post_sim.job%A.stdout
+#SBATCH --error=logs/post_sim/post_sim.job%A.stderr
 
 
 source ~/.bashrc
 conda activate cass
 cd /home/eecs/ivalexander13/datadir/in-the-distance/
 
-NEW_ARRAY_ID=$(($SLURM_ARRAY_TASK_ID + 0))
+NEW_ARRAY_ID=$(($SLURM_ARRAY_TASK_ID + 0000)) # Num arrays max out at 999, so use this instead.
 
 echo "Running with: $NEW_ARRAY_ID"
 
-python simulate_trees_solo.py -t $NEW_ARRAY_ID
-
+python 3-compute_distances.py -t $NEW_ARRAY_ID --cached

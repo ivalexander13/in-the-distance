@@ -1,22 +1,44 @@
-from typing import Optional
+import pickle
+from typing import Optional, Tuple
 from cassiopeia.data.CassiopeiaTree import CassiopeiaTree # type: ignore
-from cassiopeia.solver.dissimilarity_functions import weighted_hamming_distance # type: ignore
-from cassiopeia.solver import NeighborJoiningSolver # type: ignore
+from cassiopeia import solver # type: ignore
 import pandas as pd
 import numpy as np
 
+# Copied from score_all_trees.py
+def get_stressor_param_from_directory_name(dir_name: str) -> Tuple[str, str]:
+    """Gets stressor paramater number.
+
+    Stressors appear as directories with an alphanumeric name - the first set of
+    characters correspond to the stressor and the numbers correspond to the
+    parameter. For example "char10" would indicate that this directory stores
+    results from benchmarks with 10 characters. This function separates the
+    stressor name and parameter.
+
+    Args:
+        filename: Stressor directory name.
+
+    Returns:
+        Stressor name and parameter.
+    """
+    param = ""
+    stressor_name = ""
+    for character in dir_name:
+        if character.isdigit():
+            param += character
+        else:
+            stressor_name += character
+
+    return stressor_name, param
+
 class IWHD:
-    # Copy this class to dissimilarity_functions.py
     def __init__(
         self, 
-        numstates,
+        state_distribution,
         mut_prop,
         total_time=1): 
 
         self.total_time = total_time
-
-        # Getting q
-        state_distribution = dict(enumerate([1 / numstates] * numstates, 1))
         self.q = np.sum(np.array([*state_distribution.values()])**2)
 
         # Getting mutation rate
@@ -52,7 +74,7 @@ class IWHD:
     ) -> float:
         
         # Weighted Hamming Distance
-        whd = weighted_hamming_distance(s1, s2, missing_state_indicator, weights)
+        whd = solver.dissimilarity.weighted_hamming_distance(s1, s2, missing_state_indicator, weights)
                 
         return 2 * self._iwhd(
             mut_rate=self.mut_rate,     
@@ -62,7 +84,7 @@ class IWHD:
             error_tolerance=0.001
         )
 
-class InverseNJSolver(NeighborJoiningSolver):
+class InverseNJSolver(solver.NeighborJoiningSolver):
     def get_dissimilarity_map(
         self, 
         cassiopeia_tree: CassiopeiaTree,
@@ -75,11 +97,91 @@ class InverseNJSolver(NeighborJoiningSolver):
         mut_prop = np.count_nonzero(cm.replace(-1, 0)) / np.count_nonzero(cm+1)
 
         numstates = cm.max().max()
+        state_distribution = dict(enumerate([1 / numstates] * numstates, 1))
 
         # Set up the iwhd dissimilarity function
         self.dissimilarity_function = IWHD(
-            numstates=numstates,
+            state_distribution=state_distribution,
             mut_prop=mut_prop
+            )
+
+        # Get the dissimilarity map
+        self.setup_dissimilarity_map(cassiopeia_tree, layer)
+        dissimilarity_map = cassiopeia_tree.get_dissimilarity_map()
+
+
+        return dissimilarity_map
+        
+class InverseNJSolverOracle(solver.NeighborJoiningSolver):
+    def __init__(
+        self,
+        dissimilarity_function = solver.dissimilarity.weighted_hamming_distance,
+        add_root: bool = False,
+        prior_transformation: str = "negative_log",
+        gt_tree_path = None
+    ):
+
+        super().__init__(
+            dissimilarity_function = dissimilarity_function,
+            add_root = add_root,
+            prior_transformation = prior_transformation
+            )
+
+        # Default params. If none are provided, use estimations.
+        # Obtained from https://docs.google.com/document/d/1lMg90cV8k55hgRPdWqitPgMlrOGq_XBt3h5i-O9amoQ/edit
+        self.numstates = 100
+        self.state_distribution = None
+        self.mut_prop = 50
+        self.total_time = None
+
+        if gt_tree_path is not None:
+            stressor_name, stressor_value = get_stressor_param_from_directory_name(gt_tree_path)
+
+            if stressor_name == "states":
+                self.numstates = int(stressor_value)
+            elif stressor_name == "mut":
+                self.mut_prop = float(stressor_value)
+
+            # Time Param
+            tree = pickle.load(open(gt_tree_path, 'rb'))
+            self.total_time = tree.get_total_time()
+
+    def get_dissimilarity_map(
+        self, 
+        cassiopeia_tree: CassiopeiaTree,
+        layer: Optional[str] = None
+    ) -> pd.DataFrame: 
+
+        # Estimating parameters
+        cm = cassiopeia_tree.character_matrix
+        cm = cm.replace(-2, -1)
+
+        # Getting Oracle Params if Available
+        if self.numstates is None:
+            numstates = cm.max().max()
+        else:
+            numstates = self.numstates
+
+        if self.state_distribution is None:
+            state_distribution = dict(enumerate([1 / numstates] * numstates, 1))
+        else:
+            state_distribution = self.state_distribution
+
+        if self.mut_prop is None:
+            mut_prop = np.count_nonzero(cm.replace(-1, 0)) / np.count_nonzero(cm+1)
+        else:
+            mut_prop = self.mut_prop
+
+        if self.total_time is None:
+            total_time = 1
+        else:
+            total_time = self.total_time
+
+        # Set up the iwhd dissimilarity function
+        self.dissimilarity_function = IWHD(
+            state_distribution=state_distribution,
+            mut_prop=mut_prop,
+            total_time=total_time
             )
 
         # Get the dissimilarity map

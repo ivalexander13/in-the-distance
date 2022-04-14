@@ -2,10 +2,11 @@ import argparse
 import pickle as pic
 import sys
 sys.path.append('../')
-from nj_iwhd import InverseNJSolver
+from nj_iwhd import InverseNJSolver, InverseNJSolverOracle
 
 import cassiopeia.solver as solver
 from cassiopeia.data.CassiopeiaTree import CassiopeiaTree
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -24,6 +25,7 @@ def main():
     use_priors = args.use_priors
     priors_path = args.priors_path
     logfile = args.logfile
+    CUSTOM_SOLVE = False
 
     # Load the ground_truth character matrix
     tree = pic.load(open(tree_path, 'rb'))
@@ -31,6 +33,16 @@ def main():
     cm = cm.replace(-2, -1)
 
     tree_solver = solver.NeighborJoiningSolver()
+
+    # Initialize the reconstructed tree, with or without priors
+    if use_priors:
+        priors = pic.load(open(priors_path, "rb"))
+        priors_per_character = {}
+        for i in range(cm.shape[1]):
+            priors_per_character[i] = priors
+        recon_tree = CassiopeiaTree(character_matrix = cm, missing_state_indicator = -1, priors=priors_per_character)
+    else:
+        recon_tree = CassiopeiaTree(character_matrix = cm, missing_state_indicator = -1)
 
     # Initialize the solver
     if alg == "greedy":
@@ -72,19 +84,22 @@ def main():
         tree_solver = solver.SpectralGreedySolver()
     elif alg == "nj_iwhd":
         tree_solver = InverseNJSolver(add_root=True)
+    elif alg == "nj_iwhd_oracle":
+        tree_solver = InverseNJSolverOracle(
+            add_root=True,
+            gt_tree_path=tree_path,
+            )
+        CUSTOM_SOLVE = True
+        tree_solver.solve(
+            recon_tree, 
+            logfile = logfile, 
+            collapse_mutationless_edges = True,
+            )
 
-    # Initialize the reconstructed tree, with or without priors
-    if use_priors:
-        priors = pic.load(open(priors_path, "rb"))
-        priors_per_character = {}
-        for i in range(cm.shape[1]):
-            priors_per_character[i] = priors
-        recon_tree = CassiopeiaTree(character_matrix = cm, missing_state_indicator = -1, priors=priors_per_character)
-    else:
-        recon_tree = CassiopeiaTree(character_matrix = cm, missing_state_indicator = -1)
     
     # Solve the reconstructed tree, using the provided logfile
-    tree_solver.solve(recon_tree, logfile = logfile, collapse_mutationless_edges = True)
+    if not CUSTOM_SOLVE:
+        tree_solver.solve(recon_tree, logfile = logfile, collapse_mutationless_edges = True)
 
     # Save the tree newick
     with open(out_path, "w") as f:

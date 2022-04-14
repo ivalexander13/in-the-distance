@@ -15,6 +15,7 @@
 #PBS -l cput=20000:00:00
 ### Move all your environment variables to the job
 #PBS -V
+#PBS -t 0-2399
 
 ### Change to the directory where the job was submitted
 ### Alternately, use the -d option and set $PBS_O_INITDIR
@@ -27,6 +28,6 @@ source ~/.bashrc
 conda activate cass
 cd $workdir
 
-cmd="python post_sim_analytics.py -t $t"
+cmd="python 3-compute_distances.py -t $t"
 
 ${cmd}
