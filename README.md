@@ -1,2 +1,4 @@
-# In The Distance
-Distance Metric benchmarking for Yosef Lab work on Cassiopeia.
+# Ivan's Cassiopeia Benchmarking Suite
+Benchmarking scripts built primarily to test our inverse weighted hamming distance approach to Neighbor Joining.
+
+Documentation TBD
