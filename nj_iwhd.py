@@ -162,6 +162,7 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
 
         total = sum(vals)
         down_sampled_vals = [i/total for i in vals]
+        print(f'Using spling qdist with {numstates} states.')
 
         return down_sampled_vals
 
@@ -197,6 +198,7 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
             total_time = self.total_time
 
         # Set up the iwhd dissimilarity function
+        print(f'mut{mut_prop}, states{numstates}, time{total_time}')
         self.dissimilarity_function = IWHD(
             state_distribution=state_distribution,
             mut_prop=mut_prop,

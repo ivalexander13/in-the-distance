@@ -393,14 +393,10 @@ def main():
 
     if verbose:
         print(
-            f"Split {len(all_reconstructions)} into {len(file_batches)} batches."
+            f"Split {len(all_reconstructions)} into {len(file_batches)} batches of length {len(file_batches[0])} each."
         )
 
-        for i, batch in zip(range(len(file_batches)), file_batches):
-            print(f"Batch {i} of {len(batch)}")
-
     if threads > 0:
-
         all_triplets_correct_dfs = []
         all_rf_dfs = []
         for triplets_correct, rf in ngs_tools.utils.ParallelWithProgress(

@@ -1,0 +1,5 @@
+usage: 2-score_all_trees.py [-h] [--score_priors] [--threads THREADS]
+                            [--verbose] [--debug_n_entries DEBUG_N_ENTRIES]
+                            [--focus_algorithm FOCUS_ALGORITHM]
+                            number_of_cells output_stub
+2-score_all_trees.py: error: argument --threads: invalid int value: '20--verbose'
