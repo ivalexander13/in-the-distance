@@ -21,7 +21,8 @@ source ~/.bashrc
 conda activate cass
 cd /home/eecs/ivalexander13/datadir/in-the-distance/
 
-NEW_ARRAY_ID=$(($SLURM_ARRAY_TASK_ID + 0))
+ARRAY_OFFSET = 0
+NEW_ARRAY_ID=$(($SLURM_ARRAY_TASK_ID + $ARRAY_OFFSET))
 
 echo "Running with: $NEW_ARRAY_ID"
 

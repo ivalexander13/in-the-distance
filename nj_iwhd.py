@@ -4,6 +4,7 @@ from cassiopeia.data.CassiopeiaTree import CassiopeiaTree # type: ignore
 from cassiopeia import solver # type: ignore
 import pandas as pd
 import numpy as np
+from scipy import interpolate
 
 # Copied from score_all_trees.py
 def get_stressor_param_from_directory_name(dir_name: str) -> Tuple[str, str]:
@@ -39,7 +40,7 @@ class IWHD:
         total_time=1): 
 
         self.total_time = total_time
-        self.q = np.sum(np.array([*state_distribution.values()])**2)
+        self.q = np.sum(np.array([*state_distribution])**2)
 
         # Getting mutation rate
         self.mut_rate = np.log(1 - mut_prop)/(-1 * self.total_time) #type: ignore
@@ -131,7 +132,8 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
         # Obtained from https://docs.google.com/document/d/1lMg90cV8k55hgRPdWqitPgMlrOGq_XBt3h5i-O9amoQ/edit
         self.numstates = 100
         self.state_distribution = None
-        self.mut_prop = 50
+        # self.state_distribution = dict(enumerate([1 / self.numstates] * self.numstates, 1))
+        self.mut_prop = 0.5
         self.total_time = None
 
         if gt_tree_path is not None:
@@ -140,11 +142,28 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
             if stressor_name == "states":
                 self.numstates = int(stressor_value)
             elif stressor_name == "mut":
-                self.mut_prop = float(stressor_value)
+                self.mut_prop = float(stressor_value) / 100
 
             # Time Param
             tree = pickle.load(open(gt_tree_path, 'rb'))
-            self.total_time = tree.get_total_time()
+            self.total_time = tree.get_time(tree.leaves[0])
+
+    def _spline_qdist(self, numstates):
+        state_priors = pickle.load(open("/data/yosef2/users/richardz/projects/notebooks/full_indel_dist.pkl", "rb"))
+        tck = interpolate.splrep(list(state_priors.keys()), list(state_priors.values()))
+        bins = []
+        for i in range(numstates + 1):
+            increment = len(state_priors)//numstates
+            bins.append(increment * i)
+
+        vals = []
+        for i in range(len(bins) - 1):
+            vals.append(np.mean(interpolate.splev(list(range(bins[i], bins[i + 1])), tck)))
+
+        total = sum(vals)
+        down_sampled_vals = [i/total for i in vals]
+
+        return down_sampled_vals
 
     def get_dissimilarity_map(
         self, 
@@ -163,7 +182,7 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
             numstates = self.numstates
 
         if self.state_distribution is None:
-            state_distribution = dict(enumerate([1 / numstates] * numstates, 1))
+            state_distribution = self._spline_qdist(numstates)
         else:
             state_distribution = self.state_distribution
 

@@ -1,0 +1,192 @@
+/var/lib/slurm-llnl/slurmd/job82392/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82392/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82392/slurm_script: line 25: 0 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82401/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82401/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82396/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82398/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82400/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82399/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82407/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82412/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82413/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82401/slurm_script: line 25: 9 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82402/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82406/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82403/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82409/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82404/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82395/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82405/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82394/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82398/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82414/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82393/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82400/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82411/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82397/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82408/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82412/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82399/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82410/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82396/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82413/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82407/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82402/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82406/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82403/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82395/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82404/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82409/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82405/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82408/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82410/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82394/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82397/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82393/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82411/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82414/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82404/slurm_script: line 25: 12 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82395/slurm_script: line 25: 3 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82408/slurm_script: line 25: 16 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82399/slurm_script: line 25: 7 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82402/slurm_script: line 25: 10 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82409/slurm_script: line 25: 17 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82394/slurm_script: line 25: 2 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82396/slurm_script: line 25: 4 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82406/slurm_script: line 25: 14 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82405/slurm_script: line 25: 13 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82413/slurm_script: line 25: 21 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82393/slurm_script: line 25: 1 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82412/slurm_script: line 25: 20 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82397/slurm_script: line 25: 5 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82411/slurm_script: line 25: 19 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82398/slurm_script: line 25: 6 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82407/slurm_script: line 25: 15 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82410/slurm_script: line 25: 18 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82414/slurm_script: line 25: 22 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82403/slurm_script: line 25: 11 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82400/slurm_script: line 25: 8 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82415/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82415/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82415/slurm_script: line 25: 23 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82418/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82418/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82418/slurm_script: line 25: 26 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82430/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82416/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82435/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82434/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82417/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82420/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82437/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82428/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82432/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82422/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82424/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82423/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82433/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82425/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82429/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82436/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82421/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82419/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82438/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82430/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82426/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82391/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82416/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82434/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82420/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82425/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82431/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82416/slurm_script: line 25: 24 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82437/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82427/slurm_script: line 22: cd: /home/eecs/ivalexander13/datadir/in-the-distance/: No such file or directory
+/var/lib/slurm-llnl/slurmd/job82430/slurm_script: line 25: 38 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82417/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82432/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82423/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82422/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82424/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82428/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82436/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82419/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82421/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82435/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82433/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82426/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82391/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82427/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82431/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82429/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82438/slurm_script: line 24: ARRAY_OFFSET: command not found
+/var/lib/slurm-llnl/slurmd/job82423/slurm_script: line 25: 31 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82425/slurm_script: line 25: 33 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82427/slurm_script: line 25: 35 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82417/slurm_script: line 25: 25 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82434/slurm_script: line 25: 42 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82437/slurm_script: line 25: 45 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82420/slurm_script: line 25: 28 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82428/slurm_script: line 25: 36 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82431/slurm_script: line 25: 39 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82426/slurm_script: line 25: 34 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82391/slurm_script: line 25: 47 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82422/slurm_script: line 25: 30 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82424/slurm_script: line 25: 32 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82429/slurm_script: line 25: 37 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82419/slurm_script: line 25: 27 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82438/slurm_script: line 25: 46 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82435/slurm_script: line 25: 43 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82432/slurm_script: line 25: 40 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82421/slurm_script: line 25: 29 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82433/slurm_script: line 25: 41 + : syntax error: operand expected (error token is "+ ")
+/var/lib/slurm-llnl/slurmd/job82436/slurm_script: line 25: 44 + : syntax error: operand expected (error token is "+ ")
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
+usage: 1-reconstruct_new.new.py [-h] [-t T] [--cached]
+1-reconstruct_new.new.py: error: argument -t: expected one argument
