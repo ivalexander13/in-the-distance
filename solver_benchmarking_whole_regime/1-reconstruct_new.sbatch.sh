@@ -31,4 +31,4 @@ NEW_ARRAY_ID=$(($SLURM_ARRAY_TASK_ID + $ARRAY_OFFSET))
 
 echo "Running t: $NEW_ARRAY_ID  |  on $(date)"
 
-python 1-reconstruct_new.py -t $NEW_ARRAY_ID --cached
+python 1-reconstruct_new.py -t $NEW_ARRAY_ID

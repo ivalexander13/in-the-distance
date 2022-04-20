@@ -29,7 +29,7 @@ numtrees = range(50)
 
 # Recon Tree Params
 priors_types = ["no_priors"]
-alg = 'nj_iwhd_oracle'
+alg = 'nj_iwhd'
 
 ####################
 # Logistical Stuff #

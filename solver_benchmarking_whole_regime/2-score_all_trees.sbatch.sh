@@ -11,7 +11,9 @@
 source ~/.bashrc
 conda activate cass
 
+# Params
 numcells=2000
+alg=nj_iwhd
 
-python 2-score_all_trees.py $numcells ./data/scores/nj_iwhd_oracle --focus_algorithm nj_iwhd_oracle --threads 20 --verbose 
+python 2-score_all_trees.py $numcells ./data/scores/$alg --focus_algorithm $alg --threads 20 --verbose 
 

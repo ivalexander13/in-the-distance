@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "2-score_all_trees.py", line 424, in <module>
+    main()
+  File "2-score_all_trees.py", line 379, in main
+    "Either the triplets correct or RF file already exists."
+Exception: Either the triplets correct or RF file already exists. Either move the file, or specify a different output stub.

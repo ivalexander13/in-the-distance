@@ -63,6 +63,7 @@ class IWHD:
             error_tolerance=0.001
         )
 
+
 class InverseNJSolver(solver.NeighborJoiningSolver):
     """A Neighbor Joining solver that uses the inverse weighted hamming distance
     as the dissimilarity function.
