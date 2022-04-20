@@ -4,7 +4,8 @@ import pickle as pic
 import sys
 
 sys.path.append('../')
-from nj_iwhd import InverseNJSolver, InverseNJSolverOracle
+from nj_iwhd import InverseNJSolver
+from iwhd_utils import *
 
 import cassiopeia.solver as solver
 from cassiopeia.data.CassiopeiaTree import CassiopeiaTree
@@ -79,7 +80,6 @@ Path(save_recon_path).parent.mkdir(parents=True, exist_ok=True)
 #################
 # Main Function #
 #################
-CUSTOM_SOLVE = False
 
 # Check cached
 if Path(save_recon_path).exists() and cached:
@@ -144,19 +144,25 @@ elif alg == "spectral_greedy":
 elif alg == "nj_iwhd":
     tree_solver = InverseNJSolver(add_root=True)
 elif alg == "nj_iwhd_oracle":
-    tree_solver = InverseNJSolverOracle(
-        add_root=True,
-        gt_tree_path=gt_tree_path,
-        )
-    CUSTOM_SOLVE = True
-    tree_solver.solve(
-        recon_tree, 
-        collapse_mutationless_edges = True,
-        )
+    tree_solver = InverseNJSolver(add_root=True)
+
+    # Setting default oracle params
+    tree_solver.set_numstates(100) 
+    tree_solver.set_mut_prop(0.5)
+
+    # Setting stressor oracle params
+    stressor_name, stressor_value = get_stressor_param_from_directory_name(gt_tree_path)
+
+    if stressor_name == "states":
+        tree_solver.set_numstates(int(stressor_value))
+    elif stressor_name == "mut":
+        tree_solver.set_mut_prop(float(stressor_value) / 100)
+
+    # Time Param
+    tree_solver.set_total_time(tree.get_time(tree.leaves[0]))
 
 # Solve the reconstructed tree, using the provided logfile
-if not CUSTOM_SOLVE:
-    tree_solver.solve(recon_tree, collapse_mutationless_edges = True)
+tree_solver.solve(recon_tree, collapse_mutationless_edges = True)
 
 # Save the tree newick
 with open(save_recon_path, "w+") as f:

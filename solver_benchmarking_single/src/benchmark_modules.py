@@ -1,9 +1,19 @@
 from pathlib import Path
-import cassiopeia as cas
-import pandas as pd
 import pickle as pic
 from tqdm import trange
 import os
+import sys
+
+sys.path.append('../../')
+from nj_iwhd import InverseNJSolver  
+
+import numpy as np
+import pandas as pd
+
+#!pip install https://github.com/aizeny/snj
+import spectraltree
+from dendropy import TaxonNamespace
+import cassiopeia as cas
 from cassiopeia.data.CassiopeiaTree import CassiopeiaTree
 from cassiopeia.solver.CassiopeiaSolver import CassiopeiaSolver
 
@@ -248,4 +258,137 @@ class BenchmarkModule:
         return 
 
 
+class GroundTruthCMBM(BenchmarkModule):
+    def get_cm(self, i):
+        gt_tree = self.get_gt_tree(i)
+        cm = gt_tree.character_matrix
 
+        return cm
+
+class IWHDBenchmarkModule(BenchmarkModule):
+    def run_solver(self, i, cm, collapse_mutationless_edges):
+        # Initialize output recon tree
+        recon_tree = cas.data.CassiopeiaTree(
+            character_matrix=cm, 
+            missing_state_indicator = -1
+            )
+
+        # Get gt tree
+        gt_tree = self.get_gt_tree(i)
+        total_time = gt_tree.get_time(gt_tree.leaves[0])
+
+        # Setting default oracle params
+        self.solver = InverseNJSolver(add_root=True)
+        self.solver.set_mut_prop(0.5)
+        self.solver.set_numstates(100)
+        self.solver.set_total_time(total_time)
+
+        # Run solver
+        self.solver.solve(recon_tree, collapse_mutationless_edges = collapse_mutationless_edges)
+        
+        return recon_tree.get_newick()  
+
+    def get_cm(self, i):
+        gt_tree = self.get_gt_tree(i)
+        cm = gt_tree.character_matrix
+
+        return cm     
+
+
+class TrueDistBM(BenchmarkModule):
+    def run_solver(self, i, cm, collapse_mutationless_edges):
+        # Initialize output recon tree
+        recon_tree = cas.data.CassiopeiaTree(
+            character_matrix=cm, 
+            missing_state_indicator = -1
+            )
+
+        # Get gt tree
+        gt_tree = self.get_gt_tree(i)
+
+        # Get iwhd dissim function
+        dists = pd.DataFrame(columns=gt_tree.leaves, index=gt_tree.leaves)
+        for leaf in gt_tree.leaves:
+            dists[leaf] = gt_tree.get_distances(leaf, leaves_only=True).values()
+            
+        dists = np.exp(dists)  # type: ignore
+            
+        recon_tree.set_dissimilarity_map(dists)
+    
+        # Instantiate Solver
+        self.solver.solve(recon_tree, collapse_mutationless_edges = collapse_mutationless_edges)
+        
+        return recon_tree.get_newick()
+
+    
+
+class NJYaffeBM(BenchmarkModule):
+    def run_solver(self, i, cm, collapse_mutationless_edges):
+        # Initialize output recon tree
+        recon_tree = cas.data.CassiopeiaTree(
+            character_matrix=cm, 
+            missing_state_indicator = -1
+            )
+
+        # Reconstruct tree in OG mode, then convert to CassiopeiaTree
+        namespace = TaxonNamespace(cm.index)
+
+        taxa_meta = spectraltree.TaxaMetadata(
+            namespace,
+            [i for i in namespace] 
+        )
+        nj = spectraltree.NeighborJoining(spectraltree.JC_similarity_matrix)
+        solved_newick = str(nj(cm.values, taxa_meta)) + ';'
+
+        recon_tree.populate_tree(solved_newick)
+        recon_tree.collapse_mutationless_edges(collapse_mutationless_edges)
+    
+        return recon_tree.get_newick()
+
+
+class SNJYaffeBM(BenchmarkModule):
+    def run_solver(self, i, cm, collapse_mutationless_edges):
+        # Initialize output recon tree
+        recon_tree = cas.data.CassiopeiaTree(
+            character_matrix=cm, 
+            missing_state_indicator = -1
+            )
+
+        # Reconstruct tree in OG mode, then convert to CassiopeiaTree
+        namespace = TaxonNamespace(cm.index)
+
+        taxa_meta = spectraltree.TaxaMetadata(
+            namespace,
+            [i for i in namespace] 
+        )
+        snj = spectraltree.SpectralNeighborJoining(spectraltree.JC_similarity_matrix)
+        solved_newick = str(snj(cm.values, taxa_meta)) + ';'
+
+        recon_tree.populate_tree(solved_newick)
+        recon_tree.collapse_mutationless_edges(collapse_mutationless_edges)
+    
+        return recon_tree.get_newick()
+
+
+class STDRYaffeBM(BenchmarkModule):
+    def run_solver(self, i, cm, collapse_mutationless_edges):
+        # Initialize output recon tree
+        recon_tree = cas.data.CassiopeiaTree(
+            character_matrix=cm, 
+            missing_state_indicator = -1
+            )
+
+        # Reconstruct tree in OG mode, then convert to CassiopeiaTree
+        namespace = TaxonNamespace(cm.index)
+
+        taxa_meta = spectraltree.TaxaMetadata(
+            namespace,
+            [i for i in namespace] 
+        )
+        stdr_nj = spectraltree.STDR(spectraltree.NeighborJoining,spectraltree.JC_similarity_matrix)
+        solved_newick = str(stdr_nj(cm.values, taxa_meta)) + ';'
+
+        recon_tree.populate_tree(solved_newick)
+        recon_tree.collapse_mutationless_edges(collapse_mutationless_edges)
+    
+        return recon_tree.get_newick()

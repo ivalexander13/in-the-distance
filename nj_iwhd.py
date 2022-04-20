@@ -1,51 +1,29 @@
 import pickle
-from typing import Optional, Tuple
-from cassiopeia.data.CassiopeiaTree import CassiopeiaTree # type: ignore
-from cassiopeia import solver # type: ignore
+from typing import List, Optional
+from cassiopeia.data.CassiopeiaTree import CassiopeiaTree 
+from cassiopeia import solver
 import pandas as pd
 import numpy as np
 from scipy import interpolate
 
-# Copied from score_all_trees.py
-def get_stressor_param_from_directory_name(dir_name: str) -> Tuple[str, str]:
-    """Gets stressor paramater number.
-
-    Stressors appear as directories with an alphanumeric name - the first set of
-    characters correspond to the stressor and the numbers correspond to the
-    parameter. For example "char10" would indicate that this directory stores
-    results from benchmarks with 10 characters. This function separates the
-    stressor name and parameter.
-
-    Args:
-        filename: Stressor directory name.
-
-    Returns:
-        Stressor name and parameter.
-    """
-    param = ""
-    stressor_name = ""
-    for character in dir_name:
-        if character.isdigit():
-            param += character
-        else:
-            stressor_name += character
-
-    return stressor_name, param
 
 class IWHD:
     def __init__(
         self, 
-        state_distribution,
-        mut_prop,
-        total_time=1): 
+        state_distribution: List[float],
+        mut_prop: float,
+        total_time: float=1): 
 
         self.total_time = total_time
         self.q = np.sum(np.array([*state_distribution])**2)
-
-        # Getting mutation rate
         self.mut_rate = np.log(1 - mut_prop)/(-1 * self.total_time) #type: ignore
 
-    def _ewhd_given_h(self, mut_rate, collision_rate, height, time):
+    def _ewhd_given_h(
+        self, 
+        mut_rate: float, 
+        collision_rate: float, 
+        height: float, 
+        time: float):
         t = time
         r = mut_rate
         q = collision_rate
@@ -86,69 +64,18 @@ class IWHD:
         )
 
 class InverseNJSolver(solver.NeighborJoiningSolver):
-    def get_dissimilarity_map(
-        self, 
-        cassiopeia_tree: CassiopeiaTree,
-        layer: Optional[str] = None
-    ) -> pd.DataFrame: 
+    """A Neighbor Joining solver that uses the inverse weighted hamming distance
+    as the dissimilarity function.
+    """
+    def _spline_qdist(self, numstates: int) -> List:
+        """Get an empirical state distribution.
 
-        # Estimating parameters
-        cm = cassiopeia_tree.character_matrix
-        cm = cm.replace(-2, -1)
-        mut_prop = np.count_nonzero(cm.replace(-1, 0)) / np.count_nonzero(cm+1)
+        Args:
+            numstates (int): = number of states in the character matrix.
 
-        numstates = cm.max().max()
-        state_distribution = dict(enumerate([1 / numstates] * numstates, 1))
-
-        # Set up the iwhd dissimilarity function
-        self.dissimilarity_function = IWHD(
-            state_distribution=state_distribution,
-            mut_prop=mut_prop
-            )
-
-        # Get the dissimilarity map
-        self.setup_dissimilarity_map(cassiopeia_tree, layer)
-        dissimilarity_map = cassiopeia_tree.get_dissimilarity_map()
-
-
-        return dissimilarity_map
-        
-class InverseNJSolverOracle(solver.NeighborJoiningSolver):
-    def __init__(
-        self,
-        dissimilarity_function = solver.dissimilarity.weighted_hamming_distance,
-        add_root: bool = False,
-        prior_transformation: str = "negative_log",
-        gt_tree_path = None
-    ):
-
-        super().__init__(
-            dissimilarity_function = dissimilarity_function,
-            add_root = add_root,
-            prior_transformation = prior_transformation
-            )
-
-        # Default params. If none are provided, use estimations.
-        # Obtained from https://docs.google.com/document/d/1lMg90cV8k55hgRPdWqitPgMlrOGq_XBt3h5i-O9amoQ/edit
-        self.numstates = 100
-        self.state_distribution = None
-        # self.state_distribution = dict(enumerate([1 / self.numstates] * self.numstates, 1))
-        self.mut_prop = 0.5
-        self.total_time = None
-
-        if gt_tree_path is not None:
-            stressor_name, stressor_value = get_stressor_param_from_directory_name(gt_tree_path)
-
-            if stressor_name == "states":
-                self.numstates = int(stressor_value)
-            elif stressor_name == "mut":
-                self.mut_prop = float(stressor_value) / 100
-
-            # Time Param
-            tree = pickle.load(open(gt_tree_path, 'rb'))
-            self.total_time = tree.get_time(tree.leaves[0])
-
-    def _spline_qdist(self, numstates):
+        Returns:
+            List: A list of floats representing the state distribution.
+        """
         state_priors = pickle.load(open("/data/yosef2/users/richardz/projects/notebooks/full_indel_dist.pkl", "rb"))
         tck = interpolate.splrep(list(state_priors.keys()), list(state_priors.values()))
         bins = []
@@ -162,43 +89,82 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
 
         total = sum(vals)
         down_sampled_vals = [i/total for i in vals]
-        print(f'Using spling qdist with {numstates} states.')
 
         return down_sampled_vals
+
+    def set_numstates(self, numstates: int) -> None:
+        """Set the number of states for the inverse weighted hamming distance function.
+
+        Args:
+            numstates (int): = number of states 
+        """
+        self.numstates: int = numstates
+        
+    def set_mut_prop(self, mut_prop: float) -> None:
+        """Set the mutation proportion for the inverse weighted hamming distance function.
+
+        Args:
+            mut_prop (float): = mutation proportion
+        """
+        self.mut_prop: float = mut_prop
+
+    def set_total_time(self, total_time: float) -> None:
+        """Set the total time of a tree for the inverse weighted hamming distance function.
+
+        Args:
+            total_time (float): = total time of a tree
+        """
+        self.total_time: float = total_time
+
+    def set_state_distribution(self, state_distribution: List) -> None:
+        """Set the state distribution for the inverse weighted hamming distance function.
+
+        Args:
+            state_distribution (List): = state distribution
+        """
+        self.state_distribution: List = state_distribution
 
     def get_dissimilarity_map(
         self, 
         cassiopeia_tree: CassiopeiaTree,
         layer: Optional[str] = None
-    ) -> pd.DataFrame: 
-
+        ) -> pd.DataFrame: 
+        """Get the dissimilarity map for the given tree. This method overrides the same method of the super class.
+        """
         # Estimating parameters
         cm = cassiopeia_tree.character_matrix
         cm = cm.replace(-2, -1)
 
-        # Getting Oracle Params if Available
-        if self.numstates is None:
-            numstates = cm.max().max()
-        else:
+        # Parameter Estimation
+        if hasattr(self, "numstates"):
             numstates = self.numstates
+            del self.numstates
 
-        if self.state_distribution is None:
-            state_distribution = self._spline_qdist(numstates)
         else:
-            state_distribution = self.state_distribution
+            numstates = cm.max().max()
 
-        if self.mut_prop is None:
-            mut_prop = np.count_nonzero(cm.replace(-1, 0)) / np.count_nonzero(cm+1)
-        else:
+        if hasattr(self, "mut_prop"):
             mut_prop = self.mut_prop
-
-        if self.total_time is None:
-            total_time = 1
+            del self.mut_prop
         else:
+            mut_prop = np.count_nonzero(cm.replace(-1, 0)) / np.count_nonzero(cm+1)
+
+        if hasattr(self, "total_time"):
             total_time = self.total_time
+            del self.total_time
+        else:
+            total_time = 1
+
+        if hasattr(self, "state_distribution"):
+            state_distribution = self.state_distribution
+            del self.state_distribution
+        else:
+            try:
+                state_distribution = self._spline_qdist(numstates)
+            except:
+                state_distribution = [1 / numstates] * numstates
 
         # Set up the iwhd dissimilarity function
-        print(f'mut{mut_prop}, states{numstates}, time{total_time}')
         self.dissimilarity_function = IWHD(
             state_distribution=state_distribution,
             mut_prop=mut_prop,
@@ -209,5 +175,5 @@ class InverseNJSolverOracle(solver.NeighborJoiningSolver):
         self.setup_dissimilarity_map(cassiopeia_tree, layer)
         dissimilarity_map = cassiopeia_tree.get_dissimilarity_map()
 
-
         return dissimilarity_map
+        
