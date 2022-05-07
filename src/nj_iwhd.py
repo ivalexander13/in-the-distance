@@ -8,6 +8,8 @@ from scipy import interpolate
 
 
 class IWHD:
+    """A class to set up the inverse weighted hamming distance as Cassiopeia's dissimilarity function.
+    """
     def __init__(
         self, 
         state_distribution: List[float],
