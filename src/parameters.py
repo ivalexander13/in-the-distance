@@ -1,6 +1,5 @@
 from collections import namedtuple
 
-
 TreeParameters = namedtuple(
     "TreeParameters",
     [
@@ -24,9 +23,5 @@ LineageTracingParameters = namedtuple(
 
 SolverParameters = namedtuple(
     "SolverParameters",
-    [
-        "solver_name",
-        "collapse_mutationless_edges",
-        "priors_type"
-    ],
+    ["solver_name", "collapse_mutationless_edges", "priors_type"],
 )
