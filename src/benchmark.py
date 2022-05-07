@@ -4,12 +4,16 @@ from typing import Tuple
 import numpy as np
 
 from nj_iwhd import InverseNJSolver
-from src.caching import cached
+from src.caching import cached, set_cache_dir, set_use_hash
 from src.parameters import *
 
 import cassiopeia as cas
 import cassiopeia.solver as solver
 from cassiopeia.data.CassiopeiaTree import CassiopeiaTree
+
+# Caching settings
+set_cache_dir("./_cache/")
+set_use_hash(True)
 
 
 def get_stressor_by_params(
@@ -112,7 +116,7 @@ def get_solver_by_name(
 
 @cached()
 def run_solver(
-    gt_tree,
+    tree_parameters,
     lt_parameters,
     solver_parameters
 ) -> CassiopeiaTree:
@@ -120,6 +124,11 @@ def run_solver(
         solver_parameters.solver_name, 
         priors_type=solver_parameters.priors_type
         )
+
+    gt_tree = get_gt_tree(
+        tree_parameters,
+        lt_parameters
+    )
 
     if solver_parameters.solver_name == 'nj_iwhd_oracle':
         # Setting default oracle params
@@ -148,7 +157,7 @@ def get_score(
 
     # get solved tree
     recon_tree = run_solver(
-        gt_tree,
+        tree_parameters,
         lt_parameters,
         solver_parameters
     )

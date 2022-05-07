@@ -8,8 +8,8 @@ import pandas as pd
 import seaborn as sns
 from tqdm import tqdm
 
-from src.benchmark import *
-from src.parameters import *
+from src.benchmark import get_stressor_by_params, get_score
+from src.parameters import TreeParameters, LineageTracingParameters, SolverParameters
 
 
 def _collect_scores_from_files(algs: List[str]) -> Tuple[pd.DataFrame, pd.DataFrame]:
@@ -257,9 +257,8 @@ def plot_stressor_regimes(
             drop_total = drop_total__default
 
             for param in list_values:
-                # tqdm
-                pbar.update(1)
                 pbar.set_description(f"{nsolver_name} > {nfitness_regime} > tree{nseed} > {stressor}{param}")
+
                 if stressor == 'numchars':
                     nchars = param
                 elif stressor == 'numstates':
@@ -323,6 +322,8 @@ def plot_stressor_regimes(
                         )
                     ]
                 )
+
+                pbar.update(1)
 
     rf_df = pd.DataFrame(rf_data, columns=data_cols)
     triplets_df = pd.DataFrame(triplets_data, columns=data_cols)
