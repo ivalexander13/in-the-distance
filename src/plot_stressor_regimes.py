@@ -134,7 +134,9 @@ def _plot(
     Returns:
         str: Path to the output plot file.
     """
+    plt.clf()
     sns.set(rc={'figure.figsize': figsize})
+    Path(outfile).parent.mkdir(parents=True, exist_ok=True)
 
     # Main Boxplot
     bp = sns.boxplot(
@@ -155,7 +157,6 @@ def _plot(
     [plt.axhline(y, color = 'b', linestyle='--') for y in fitness_divisions]
 
     # Visuals
-    Path(outfile).parent.mkdir(parents=True, exist_ok=True)
     plt.title(title)
     plt.xlabel(x_label)
     plt.tight_layout()
