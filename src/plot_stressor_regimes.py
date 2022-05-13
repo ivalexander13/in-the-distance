@@ -190,6 +190,7 @@ def _plot(
 
     # Visuals
     plt.title(title)
+    plt.xlim([-0.1, 1.1])
     plt.xlabel(x_label)
     plt.tight_layout()
     plt.savefig(outfile, dpi=300)
@@ -337,11 +338,11 @@ def plot_stressor_regimes(
                 )
 
                 # Get score
-                stressor, param = get_stressor_by_params(lt_parameters)
+                stressor_name, param = get_stressor_by_params(lt_parameters)
                 rf_data.append(
                     [
                         nfitness_regime,
-                        stressor,
+                        stressor_name,
                         param,
                         nsolver_name,
                         nseed,
@@ -356,7 +357,7 @@ def plot_stressor_regimes(
                 triplets_data.append(
                     [
                         nfitness_regime,
-                        stressor,
+                        stressor_name,
                         param,
                         nsolver_name,
                         nseed,
